@@ -1,4 +1,4 @@
-# TikTok Clone - 抖音短视频克隆项目
+# TikTok - 抖音短视频
 
 一个基于Android平台开发的抖音短视频克隆应用，实现了抖音的核心功能和流畅的用户体验。
 
@@ -40,23 +40,6 @@
 
 ## 📱 安装与运行
 
-### 环境要求
-- Android Studio 4.0+
-- Android SDK 21+
-- Kotlin 1.5+
-
-### 安装步骤
-1. 克隆项目到本地
-   ```bash
-   git clone https://github.com/your-username/tiktok-clone.git
-   ```
-
-2. 打开Android Studio，导入项目
-
-3. 同步Gradle依赖
-
-4. 运行项目到模拟器或真实设备
-
 ## 📁 项目结构
 
 ```
@@ -96,12 +79,6 @@
 ### 折叠个人主页
 使用CoordinatorLayout和AppBarLayout实现个人主页的折叠效果，滚动时背景图和个人信息区域平滑过渡。
 
-## 📸 功能截图
-
-| 视频播放页 | 个人主页 | 评论功能 |
-|-----------|---------|---------|
-| ![Video Playback](https://upload-images.jianshu.io/upload_images/8669504-e0830fc715f87cb2.gif) | ![Personal Home](https://upload-images.jianshu.io/upload_images/8669504-ca63d12612869f5d.gif) | ![Comments](https://upload-images.jianshu.io/upload_images/8669504-edd6777f1ba8733a.gif) |
-
 ## 🎯 项目亮点
 
 1. **流畅的用户体验** - 优化了视频加载、播放和切换的性能，确保流畅的用户体验
@@ -113,28 +90,6 @@
 ## 📝 数据说明
 
 由于没有真实的后端接口，项目使用本地资源模拟视频数据。视频和图片资源存储在项目中，通过DataCreate类构造视频列表数据。
-
-## 🤝 贡献
-
-欢迎提交Issue和Pull Request来帮助改进这个项目！
-
-## 📄 许可证
-
-本项目采用MIT许可证，详情请查看[LICENSE](LICENSE)文件。
-
-## 📧 联系方式
-
-如有问题或建议，欢迎通过以下方式联系：
-- GitHub: [your-username](https://github.com/your-username)
-- Email: your-email@example.com
-
-## 📱 体验下载
-
-你可以通过以下链接下载APK文件体验：
-
-[下载APK](https://example.com/tiktok-clone.apk)
-
----
 
 **温馨提示**：本项目仅供学习和研究使用，请勿用于商业用途。
 
