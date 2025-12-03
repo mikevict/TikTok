@@ -1,0 +1,55 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+//apply from: 'and_res_guard.gradle'
+
+android {
+    compileSdk rootProject.ext.android.compileSdk
+    defaultConfig {
+        applicationId "com.bytedance.tiktok"
+        minSdk rootProject.ext.android.minSdk
+        targetSdk rootProject.ext.android.targetSdk
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug {
+            minifyEnabled true
+            shrinkResources true //强力删除无用资源，不打包进apk，需配合minifyEnabled一起使用
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        dataBinding = true
+        viewBinding = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation(rootProject.ext.androisxLibs)
+    implementation rootProject.ext.tablayout.tablayout
+    implementation rootProject.ext.rxjava.rxjava
+    implementation rootProject.ext.lottile.lottile
+    implementation rootProject.ext.glide.glide
+    implementation rootProject.ext.exoplayerLibs
+    debugImplementation rootProject.ext.leakcanary.leakcanary
+
+}
+
